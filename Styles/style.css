@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #fbf6f2;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  margin: 1.5rem;
+}
+
+header div.logo {
+  flex: 5 1 auto;
+}
+
+header div.logo img {
+  width: 9vw;
+  height: 9vw;
+}
+
+header div.social-icons {
+  flex: 1 1 auto;
+}
+
+header div.social-icons ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  height: 30%;
+}
+
+header div.social-icons ul img {
+  height: 3vw;
+}
+
+@media screen and (max-width: 500px) {
+  header div.logo img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header div.social-icons img {
+    width: 12vw;
+    height: 12vw;
+    justify-content: space-between;
+  }
+}
+
+nav {
+  margin: 1rem auto;
+  width: 70%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+nav ul a {
+  color: #6c9f7f;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
+
+nav ul a:hover {
+  background-color: #e0e0e0;
+}
+
+main div.about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 870px) {
+  main div.about {
+    justify-content: center;
+  }
+}
+
+main div.about section.greeting {
+  justify-content: center;
+  width: 70%;
+}
+
+main div.about section.greeting h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  color: #444444;
+  text-align: left;
+  margin: 3.5rem 1rem 2rem 1.5rem;
+  line-height: 4rem;
+}
+
+@media screen and (max-width: 870px) {
+  main div.about section.greeting h1 {
+    margin-top: 1.5rem;
+    line-height: 2.8rem;
+  }
+}
+
+main div.about section.greeting h2 {
+  margin-top: 2rem;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  color: #417a56;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 870px) {
+  main div.about section.greeting h2 {
+    margin-top: 1rem;
+  }
+}
+
+main div.about section.profile-picture img {
+  border-radius: 15px;
+  width: 15rem;
+}
+
+@media screen and (max-width: 870px) {
+  main div.about section.profile-picture img {
+    margin-top: 1rem;
+  }
+}
+
+main div.about section.introduction p {
+  color: #444444;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin: 1.5rem 1rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 870px) {
+  main div.about section.introduction p {
+    text-align: center;
+  }
+}
+
+main div.skills {
+  display: flex;
+  width: 100%;
+  height: 18rem;
+  margin-top: 2rem;
+}
+
+main div.skills section.headline {
+  background-color: #6c9f7f;
+  width: 17%;
+}
+
+main div.skills section.headline h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+main div.skills section.skill-icons {
+  width: 83%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: #caddd1;
+}
+
+main div.skills section.skill-icons img {
+  width: 5vw;
+}
+
+main div.contact {
+  display: block;
+  width: 100%;
+}
+
+main div.contact h2 {
+  color: #6c9f7f;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main div.contact form {
+  display: block;
+  text-align: center;
+  margin: 0.5rem auto;
+}
+
+main div.contact form input {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  width: 100%;
+  height: 8rem;
+  background-color: #6c9f7f;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+}
+
+footer div.logo {
+  margin: 0.5rem auto;
+}
+
+footer div.logo img {
+  width: 3.5rem;
+}
+
+footer div.social-contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer div.social-contacts img {
+  width: 3vw;
+  height: 3vw;
+  opacity: 0.4;
+  margin: 0 0.5rem;
+}
+
+footer div.copyright {
+  color: #fbf6f2;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
