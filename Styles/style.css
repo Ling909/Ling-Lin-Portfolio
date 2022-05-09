@@ -17,41 +17,36 @@ header {
 }
 
 header div.logo {
-  flex: 5 1 auto;
+  display: flex;
+  flex-grow: 3;
 }
 
 header div.logo img {
-  width: 9vw;
-  height: 9vw;
+  width: 8vw;
+  height: 8vw;
 }
 
-header div.social-icons {
-  flex: 1 1 auto;
-}
-
-header div.social-icons ul {
+header section.social-icons {
   display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-  height: 30%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-grow: 1;
 }
 
-header div.social-icons ul img {
-  height: 3vw;
+header section.social-icons img {
+  width: 2.5vw;
+  margin-left: 2rem;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
   header div.logo img {
     width: 4rem;
     height: 4rem;
   }
-}
-
-@media screen and (max-width: 500px) {
-  header div.social-icons img {
-    width: 12vw;
-    height: 12vw;
-    justify-content: space-between;
+  header section.social-icons img {
+    width: 5vw;
+    height: 5vw;
+    margin-left: 1rem;
   }
 }
 
@@ -79,86 +74,61 @@ nav ul a:hover {
   background-color: #e0e0e0;
 }
 
-main div.about {
+nav ul a:active {
+  background-color: #ddb789;
+}
+
+main .about {
   display: flex;
-  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1208px) {
-  main div.about {
-    justify-content: center;
-  }
-}
-
-main div.about section.greeting {
+main .about .greeting {
   justify-content: center;
-  width: 70%;
 }
 
-main div.about section.greeting h1 {
+main .about .greeting h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 3.5rem;
-  letter-spacing: 0.3rem;
   color: #444444;
   text-align: left;
-  margin: 3rem 2rem 2rem 3.5rem;
+  margin-top: 2.5rem;
+  margin-left: 2rem;
   line-height: 4rem;
 }
 
-@media screen and (max-width: 1208px) {
-  main div.about section.greeting h1 {
-    margin-top: 1.5rem;
-    line-height: 3.2rem;
-    text-align: center;
-  }
-}
-
-main div.about section.greeting h2 {
-  margin-top: 2rem;
+main .about .greeting h2 {
   font-family: 'Abril Fatface', cursive;
   font-weight: normal;
   font-size: 1.5rem;
   color: #417a56;
   text-align: left;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
-@media screen and (max-width: 1208px) {
-  main div.about section.greeting h2 {
-    margin-top: 1rem;
-    text-align: center;
+@media screen and (min-width: 1065px) {
+  main .about .greeting h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 }
 
-main div.about section.profile-picture {
-  margin: 0 2rem;
-}
-
-main div.about section.profile-picture img {
-  border-radius: 15px;
-  margin-top: 3rem;
-  width: 17rem;
-}
-
-@media screen and (max-width: 1208px) {
-  main div.about section.profile-picture img {
-    margin-top: 1rem;
-    align-items: center;
-  }
-}
-
-main div.about section.introduction p {
+main .about .introduction p {
   color: #444444;
   font-size: 1.1rem;
   line-height: 1.5rem;
-  margin: 0 0 2.5rem 3.5rem;
+  margin-left: 2rem;
   text-align: left;
 }
 
-@media screen and (max-width: 1208px) {
-  main div.about section.introduction p {
-    text-align: center;
-  }
+main .about .profile-picture {
+  margin: 0 2rem;
+  justify-self: flex-end;
+}
+
+main .about .profile-picture img {
+  border-radius: 15px;
+  margin-top: 3rem;
+  width: 17rem;
 }
 
 main div.skills {
@@ -193,7 +163,7 @@ main div.skills section.skill-icons img {
   width: 5vw;
 }
 
-main section.portfolio {
+main section.project {
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
@@ -201,20 +171,20 @@ main section.portfolio {
   text-align: center;
 }
 
-main section.portfolio h2 {
+main section.project h2 {
   font-size: 2rem;
   color: #6c9f7f;
   margin-bottom: 1.5rem;
 }
 
-main section.portfolio section.cards {
+main section.project section.cards {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
   justify-content: center;
 }
 
-main section.portfolio div.card {
+main section.project section.cards div.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,23 +193,23 @@ main section.portfolio div.card {
   margin-bottom: 1.5rem;
 }
 
-main section.portfolio div.card img {
+main section.project section.cards div.card img {
   width: 20vw;
   height: 22vw;
 }
 
 @media screen and (max-width: 1141px) {
-  main section.portfolio div.card img {
+  main section.project section.cards div.card img {
     width: 40vw;
     height: 44vw;
   }
 }
 
-main section.portfolio div.card h4 {
+main section.project section.cards div.card h4 {
   margin: 1rem auto;
 }
 
-main section.portfolio div.card a {
+main section.project section.cards div.card a {
   text-decoration: none;
   margin-top: 1rem;
   padding: 0.5rem 1.5rem;
@@ -247,30 +217,30 @@ main section.portfolio div.card a {
   background-color: #6c9f7f;
 }
 
-div.contact {
+main div.contact {
   display: block;
   width: 100%;
 }
 
-div.contact h2 {
+main div.contact h2 {
   color: #6c9f7f;
   font-size: 2rem;
   text-align: center;
 }
 
-div.contact form {
+main div.contact form {
   display: block;
   text-align: center;
   margin: 0.5rem auto;
 }
 
-div.contact form input {
+main div.contact form input {
   margin-bottom: 0.5rem;
 }
 
 footer {
   width: 100%;
-  height: 8rem;
+  height: 10vw;
   background-color: #6c9f7f;
   display: flex;
   flex-direction: column;
@@ -279,13 +249,13 @@ footer {
 }
 
 footer div.logo img {
-  height: 5vw;
-  width: 5vw;
+  height: 4vw;
+  width: 4vw;
 }
 
 footer section.social-contacts img {
-  width: 3vw;
-  height: 3vw;
+  width: 2.5vw;
+  height: 2.5vw;
   opacity: 0.4;
   margin: 0 0.5rem;
 }
